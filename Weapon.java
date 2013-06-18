@@ -7,6 +7,7 @@ public abstract class Weapon{
 
 //int
 	int strength;
+	int speed; //the higher the slower
 
 //double
 
@@ -14,8 +15,14 @@ public abstract class Weapon{
 //boolean
 	boolean rapidFire;
 
+//Person
+	Person person;
+//ArrayList
+	ArrayList<Bullet> bulletList = new ArrayList<Bullet>();
 
 	public Weapon(){
 
 	}
+
+	public abstract void fire();
 }
